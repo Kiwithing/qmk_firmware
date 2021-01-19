@@ -17,9 +17,21 @@
 #include QMK_KEYBOARD_H
 #include "muse.h"
 
-enum preonic_layers { _QWERTY, _FUNCT, _LOWER, _RAISE, _ADJUST };
+enum preonic_layers {
+     _QWERTY,
+     _FUNCT,
+     _LOWER,
+     _RAISE,
+     _ADJUST
+     };
 
-enum preonic_keycodes { QWERTY = SAFE_RANGE, FUNCT, LOWER, RAISE, ADJUST };
+enum preonic_keycodes {
+    QWERTY = SAFE_RANGE,
+    FUNCT,
+    LOWER,
+    RAISE,
+    ADJUST
+     };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Base layer
